@@ -1,6 +1,6 @@
 <?php
 
-namespace App\ENUMS;
+namespace App\Enums;
 
 enum UserState:int
 {

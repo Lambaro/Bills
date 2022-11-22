@@ -18,6 +18,8 @@ return [
         'passwords' => 'users',
     ],
 
+    'admin.password' => env('ADMIN_PASSWORD', '***********************'),
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards

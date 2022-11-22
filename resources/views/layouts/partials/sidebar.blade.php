@@ -28,6 +28,18 @@
                     <a class="nav-link" href="javascript:void(0);">All year</a>
                 </nav>
             </div>
+            <a class="nav-link" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseMoneySpent" aria-expanded="true" aria-controls="collapseMoneySpent">
+                <div class="nav-link-icon"><i class="fa fa-money-bill text-green"></i></div>
+                Settings
+                <div class="sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="collapseMoneySpent" data-bs-parent="#accordionSidenav">
+                <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPages">
+                    <a class="nav-link" href="javascript:void(0);">Add Receiver</a> {{--todo dodaj--}}
+                    <a class="nav-link" href="javascript:void(0);">All year</a>
+                </nav>
+            </div>
+
         </div>
     </div>
     <div class="sidenav-footer">

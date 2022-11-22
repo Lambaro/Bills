@@ -16,12 +16,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-//apply for usage
-Route::view('/application/register','apply.register')->name('application.register');
-Route::post('/application/register',[App\Http\Controllers\ApplyController::class,'register'])->name('apply.register');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/invoices/{status?}', [App\Http\Controllers\InvoiceController::class,'index'])->name('invoice.index');
 
 Route::get('/bills/index',[App\Http\Controllers\BillsController::class,'index'])->name('bills.index');
 Route::view('/bills/create','bills.create')->name('bills.create');
